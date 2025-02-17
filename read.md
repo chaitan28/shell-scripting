@@ -4,7 +4,16 @@ A shell is a command-line interpreter that allows you to interact with the opera
  **Bash (Bourne Again Shell):** Most widely used.<br>
  **Sh (Bourne Shell):** Basic shell.<br>
  **Zsh, Ksh, etc.**<br>
-
+### editors
+vi editor
+```sh
+save and exit :wq!
+```
+nano editor
+```sh
+press CTRL + O and hit ENTER to save the changes
+press CTRL + x to exit from the file terminal
+```
 #### Example
 Hello World" script.sh
 ```sh
