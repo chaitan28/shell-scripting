@@ -41,6 +41,18 @@ CTRL + c  # Terminates the process
 CTRL + z  # Suspends the process
 ```
 
+Comments
+```sh
+# this is single line comment
+<<comment
+This 
+is 
+multi 
+line
+comment
+```
+
+
 
 
 
