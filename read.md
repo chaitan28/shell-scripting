@@ -3,7 +3,7 @@ A shell is a command-line interpreter that allows you to interact with the opera
 
  **Bash (Bourne Again Shell):** Most widely used.<br>
  **Sh (Bourne Shell):** Basic shell.<br>
- **Zsh, Ksh, etc.**
+ **Zsh, Ksh, etc.**<br>
 **Example**<br>
 Hello World" script.sh
 ```sh
