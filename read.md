@@ -4,11 +4,18 @@ A shell is a command-line interpreter that allows you to interact with the opera
  **Bash (Bourne Again Shell):** Most widely used.<br>
  **Sh (Bourne Shell):** Basic shell.<br>
  **Zsh, Ksh, etc.**<br>
+
 #### Example
 Hello World" script.sh
 ```sh
-#!/bin/bash            #this is called as SHEBANG
+#!/bin/bash            #this is called as SHEBANG 
 echo "Hello, World!"
+```
+Shebang changes as per shell
+```sh
+echo $SHELL            # check which shell for current linux system.
+#!/bin/bash            #this is called as SHEBANG  for (Bourne Again Shell) bash shell
+#!/bin/sh            #this is called as SHEBANG  for (Bourne Shell) sh  shell
 ```
 Make the script executable
 ```sh
