@@ -22,9 +22,9 @@ echo "Hello, World!"
 ```
 Shebang changes as per shell
 ```sh
-echo $SHELL            # check which shell for current linux system.
-#!/bin/bash            #this is called as SHEBANG  for (Bourne Again Shell) bash shell
-#!/bin/sh            #this is called as SHEBANG  for (Bourne Shell) sh  shell
+echo $SHELL            # Check which shell for current linux system.
+#!/bin/bash            # This is called as SHEBANG  for (Bourne Again Shell) bash shell
+#!/bin/sh              # This is called as SHEBANG  for (Bourne Shell) sh  shell
 ```
 Make the script executable
 ```sh
