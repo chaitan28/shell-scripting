@@ -1,9 +1,25 @@
-#### What is a shell?
+### What is a shell?
 A shell is a command-line interpreter that allows you to interact with the operating system. Common shells include: <br>
 
  **Bash (Bourne Again Shell):** Most widely used.<br>
  **Sh (Bourne Shell):** Basic shell.<br>
  **Zsh, Ksh, etc.**
+**Example**
+Hello World" script.sh
+```sh
+#!/bin/bash
+echo "Hello, World!"
+```
+Make the script executable
+```sh
+chmod +x script.sh
+```
+Run the script
+```sh
+./script.sh  or sh script.sh
+```
+
+
 
 
 
