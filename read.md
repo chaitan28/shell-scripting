@@ -7,7 +7,7 @@ A shell is a command-line interpreter that allows you to interact with the opera
 #### Example
 Hello World" script.sh
 ```sh
-#!/bin/bash
+#!/bin/bash            #this is called as SHEBANG
 echo "Hello, World!"
 ```
 Make the script executable
