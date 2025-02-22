@@ -31,7 +31,26 @@ echo "printing all the arrays is ${my_array[*]}"
 #!/bin/bash
 declare -A myarray
 myarray=( [name]=chaitanya [age]=23 [city]=hyder )
-
+echo "my age is ${myarray[age]}"
 echo "my name is ${myarray[name]}"
+```
 
+### Strings and string operations
+- A string in shell scripting is a sequence of characters, including letters, numbers, and symbol.
+```sh
+#!/bin/bash
+str="Hello, DevOps!"
+echo "$str"
+echo "${#str}"  # Output: 13
+echo "${str/DevOps/Cloud}"  # string replacement# Output: Hello Cloud
+echo "${str^^}"  # HELLO DEVOPS (Uppercase)
+echo "${str,,}"  # hello devops (Lowercase)
+echo "${str:7:6}"  # Output: DevOps (starts at index 7, length 6)
+```
+```sh
+Explain
+echo "${str:7:6}"  # Output: DevOps (starts at index 7, length 6)
+ H  e  l  l  o  ,     D  e  v  O  p  s  !
+ 0  1  2  3  4  5  6  7  8  9 10 11 12 13
 
+````
