@@ -21,10 +21,9 @@ echo "printing the second element is ${my_array[1]}"  # Output: banana
 echo "printing all the values is ${my_array[@]}"  # Output: apple banana cherry
 echo "printing all the arrays is ${my_array[*]}"  # Output: apple banana cherry
 echo "length of the array is ${#my_array[@]}"  # Output: 3
-echo "values from index 2-3 is ${my_array[*]:2:2}" # output: cherry chaitan
+echo "values from index 2-3 is ${my_array[*]:2:2}" # output: cherry chaitan, :2:2 → Extracts elements starting from index 2, printing 2 values from index 2.
 my_array+=("hero")
 echo "printing all the arrays is ${my_array[*]}" 
-# :2:2 → Extracts elements starting from index 2, printing 2 values.
 ```
 #### Key-value pairs in Arrays
 - 
