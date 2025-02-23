@@ -53,4 +53,23 @@ echo "${str:7:6}"  # Output: DevOps (starts at index 7, length 6)
  H  e  l  l  o  ,     D  e  v  O  p  s  !
  0  1  2  3  4  5  6  7  8  9 10 11 12 13
 
-````
+```
+
+### user interaction 
+- The read command in a shell script is used to take user input.
+```sh
+#!/bin/bash
+echo "Enter your name?"
+read name
+echo "Hello, $name!"
+```
+- using variables
+
+```sh
+#!/bin/bash
+echo "Enter the first value:"
+read var1
+echo "Enter the second value:"
+read var2
+echo "First: $var1, Second: $var2"
+```
