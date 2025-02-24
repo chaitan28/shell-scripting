@@ -34,3 +34,19 @@ if [ $a -gt $b ]; then
 else
   echo "value a is not greater then b
 fi
+```
+
+**3.if-elif-else Statement**
+```sh
+#!/bin/bash
+read -p "enter the marks of the student:" marks
+if [ $marks -ge 90 ]; then
+    echo "Grade: A"
+elif [ $marks -ge 75 ]; then
+    echo "Grade: B"
+elif [ $marks -ge 60 ]; then
+    echo "Grade: c"
+else
+    echo "Grade: Fail"
+fi
+```
