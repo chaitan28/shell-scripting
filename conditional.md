@@ -25,6 +25,14 @@
 ```sh
 [ $num1 -le $num2 ]      
 ```
+**7.others for strings**
+```sh
+File exists	            [ -e file ]
+File is a directory	    [ -d dir ]
+File is a regular file	[ -f file ]
+String is empty        	[ -z "$str" ]
+String is not empty   	[ -n "$str" ]
+```
   
 ### conditional statements
 **1. if Statement:**
