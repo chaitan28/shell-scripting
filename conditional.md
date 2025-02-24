@@ -92,3 +92,19 @@ case $choice in
         C)date;;
         *)echo "please provide valid option from above";;
 esac
+```
+
+**5.AND Operator(&&)**
+- Both statements need to be true.
+```sh
+#!/bin/bash
+read -p "what is your age?"     age
+read =p "what is your country?" country
+if [ $age -ge 18 ] && [ "$country" = "india" ]; 
+then
+  echo " you can vote"
+else
+  echo "you cant vote"
+fi
+
+```
