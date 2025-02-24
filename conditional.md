@@ -136,3 +136,9 @@ command1 && command2 || command3
 read -p "enter your age:" age
 [ $age -ge 18 ] && echo "your major" || echo "your minor"
 ```
+
+```sh
+read -p "enter your age:" age
+read -p "enter your country:" country
+[ $age -ge 18 ] &&  [ $country == india ] || echo "you can vote"
+```
