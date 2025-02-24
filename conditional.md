@@ -99,12 +99,40 @@ esac
 ```sh
 #!/bin/bash
 read -p "what is your age?"     age
-read =p "what is your country?" country
+read -p "what is your country?" country
 if [ $age -ge 18 ] && [ "$country" = "india" ]; 
 then
-  echo " you can vote"
+  echo "you can vote"
 else
   echo "you cant vote"
 fi
 
+```
+**6. OR Operator(||)**
+- Atleast one statement need to be true.
+```sh
+#!/bin/bash
+read -p "what is your age?"     age
+read -p "what is your country?" country
+if [ $age -ge 18 ] || [ "$country" = "india" ]; 
+then
+  echo "you can vote"
+else
+  echo "you cant vote"
+fi
+```
+
+**7. OR Operator(||) AND Operator**
+- combination of both Operators
+```sh
+command1 && command2 || command3
+```
+- If command1 succeeds, command2 will run
+- If command1 fails, command3 will run
+- If command1 suceeds, command2 fails then command3 runs
+
+```sh
+#!/bin/bash
+read -p "enter your age:" age
+[ $age -ge 18 ] && echo "your major" || echo "your minor"
 ```
