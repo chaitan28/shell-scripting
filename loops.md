@@ -28,7 +28,7 @@ do
 done
 ```
 
-**1.while loop**
+**2.while loop**
 - The while loop executes a block of code as long as a condition is true.
 ```sh
 #!/bin/bash
