@@ -16,12 +16,12 @@ echo "Exit status: $?"
 ```sh
 #!/bin/bash
 my_array=("apple" "banana" "cherry" "chaitan" "hello")
-echo "printing the first value is ${my_array[0]}"  # Output: apple
-echo "printing the second element is ${my_array[1]}"  # Output: banana
-echo "printing all the values is ${my_array[@]}"  # Output: apple banana cherry
-echo "printing all the arrays is ${my_array[*]}"  # Output: apple banana cherry
-echo "length of the array is ${#my_array[@]}"  # Output: 3
-echo "values from index 2-3 is ${my_array[*]:2:2}" # output: cherry chaitan, :2:2 → Extracts elements starting from index 2, printing 2 values from index 2.
+echo "printing the first value is ${my_array[0]}"       # Output: apple
+echo "printing the second element is ${my_array[1]}"    # Output: banana
+echo "printing all the values is ${my_array[@]}"        # Output: apple banana cherry
+echo "printing all the arrays is ${my_array[*]}"        # Output: apple banana cherry
+echo "length of the array is ${#my_array[@]}"           # Output: 3
+echo "values from index 2-3 is ${my_array[*]:2:2}"      # output: cherry chaitan, :2:2 → Extracts elements starting from index 2, printing 2 values from index 2.
 my_array+=("hero")
 echo "printing all the arrays is ${my_array[*]}" 
 ```
@@ -50,11 +50,11 @@ echo "my name is ${myarray[name]}"
 #!/bin/bash
 str="Hello, DevOps!"    
 echo "$str"
-echo "${#str}"  # Output: 13
+echo "${#str}"              # Output: 13
 echo "${str/DevOps/Cloud}"  # string replacement# Output: Hello Cloud
-echo "${str^^}"  # HELLO DEVOPS (Uppercase)
-echo "${str,,}"  # hello devops (Lowercase)
-echo "${str:7:6}"  # Output: DevOps (starts at index 7, length 6)
+echo "${str^^}"             # HELLO DEVOPS (Uppercase)
+echo "${str,,}"             # hello devops (Lowercase)
+echo "${str:7:6}"           # Output: DevOps (starts at index 7, length 6)
 ```
 ```sh
 Explain
