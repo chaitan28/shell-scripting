@@ -60,3 +60,39 @@ do
     sleep 2
 done
 ```
+
+**4.Nested Loops**
+- You can nest loops inside one another to create more complex logic
+```sh
+#!/bin/bash
+for i in {1..3}
+do 
+   for j in {1..2}
+   do 
+   echo "i:$i, j:$j"
+   done
+done
+```
+- For every iteration of outer loop (for i in {1..3}) is executed after completion of inner loop (for j in {1..2}) . code will print 3x2=6 lines
+means output:
+```sh
+i:1, j:1
+i:1, j:2
+i:2, j:1
+i:2, j:2
+i:3, j:1
+i:3, j:2
+```
+**5.loops with conditions**
+- Break: Exits the loop immediately.
+- Continue: Skips the current iteration and moves to the next one
+```sh
+for i in {1..10}
+do
+    if [ $i -eq 5 ]
+    then
+        break
+    fi
+    echo "Number: $i"
+done
+```
