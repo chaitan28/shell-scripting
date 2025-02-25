@@ -96,8 +96,35 @@ do
     echo "Number: $i"
 done
 ```
+
 ```sh
-
-
-
+#!/bin/bash
+IFS=","
+read -r first second third <<< "apple,banana,grape"  # <<< (Here String) → For passing a single string as input.
+echo "First: $first"
+echo "Second: $second"
+echo "Third: $third"
 ```
+```sh
+#!/bin/bash
+while IFS="," read -r id name age
+# Internal Field Separator(IFS) is sent to  comma (,) IFS (Internal Field Separator) defines how read splits a line into variables.
+# IFS="," read -r id name age :acts as a loop condition where the read command continuously reads lines from the input file (test.csv) until it reaches the end of the file (EOF).
+# The first field to id
+# The second field to name
+# The third field to age 
+
+do 
+    echo "Id is $id"
+    echo "Name is $name"
+    echo "Age is $age"
+    echo "----------------"
+done < test.csv
+```
+```
+test.csv
+101,John,25
+102,Alice,30
+103,Bob,22
+```
+
