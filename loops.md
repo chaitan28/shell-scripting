@@ -1,6 +1,6 @@
 # LOOPS IN SHELL SCRIPTING
 **1.for loop**
-The for loop iterates over a list of items and executes a block of code for each item.
+- The for loop iterates over a list of items and executes a block of code for each item.
 ```sh
 #!/bin/bash
 for i in {1..5}
@@ -18,7 +18,7 @@ do
  echo "number is:$j"
 done
 ```
-## Example FOR Loop
+**Example For Loop**
 ```sh
 #!/bin/bash
 FILE="/home/ubuntu/index.html"
