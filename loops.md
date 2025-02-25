@@ -5,7 +5,7 @@
 #!/bin/bash
 for i in {1..5}
 do 
-  echo "number:$i"
+  echo "number:$i" # for every time i will checked from the top.
 done
 #######
 for name in babu ram subbu
@@ -39,3 +39,15 @@ do
     count=$((count + 1))   #you can use let "count++"
 done
 ```
+
+**3.Infinite loop**
+- An infinite loop runs indefinitely until it is manually interrupted (e.g., using Ctrl+C).
+```sh
+#!/bin/bash
+while true
+do
+    echo "This is an infinite loop"
+    sleep 2
+done
+```
+- From the above code is clear , repeatedly executes a block of code because the condition true always evaluates to true.The sleeps for 1 second and restarts again.
