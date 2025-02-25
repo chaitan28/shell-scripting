@@ -14,7 +14,7 @@ let prod=a*b
 let quot=a/b
 echo "Sum: $sum, Difference: $diff, Product: $prod, Quotient: $quot"
 ```
-### Using let
+### Using 
 ```sh
 #!/bin/bash
 echo "enter the a value:"

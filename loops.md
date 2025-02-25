@@ -50,4 +50,13 @@ do
     sleep 2
 done
 ```
-- From the above code is clear , repeatedly executes a block of code because the condition true always evaluates to true.The sleeps for 1 second and restarts again.
+- From the above code is clear , repeatedly executes a block of code because the condition true always evaluates to true. The sleeps for 1 second and restarts again.
+- infinite loop with for 
+```sh
+#!/bin/bash
+for (( ; ; ))
+do
+    echo "This is an infinite loop"
+    sleep 2
+done
+```
