@@ -37,9 +37,18 @@ echo "my name is ${myarray[name]}"
 
 ### Strings and string operations
 - A string in shell scripting is a sequence of characters, including letters, numbers, and symbol.
+- Variables in shell scripting are used to store and manipulate data
+- A string is a sequence of characters enclosed in single (') or double (") quotes
+```sh
+  var="strings"
+ examples:
+    1.str="Hello, DevOps!"
+    2.c="10" 
+    3.a="10" && b="12"
+```
 ```sh
 #!/bin/bash
-str="Hello, DevOps!"
+str="Hello, DevOps!"    
 echo "$str"
 echo "${#str}"  # Output: 13
 echo "${str/DevOps/Cloud}"  # string replacement# Output: Hello Cloud

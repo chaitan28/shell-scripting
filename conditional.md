@@ -39,7 +39,7 @@ String is not empty   	[ -n "$str" ]
 ```sh
 #!/bin/bash
 
-read -p "enter the value:" a
+read -p "enter the value:" a # Using -p for User Input (One Variable at a Time). -p will take the input from the user.
 
 if [ $a -eq 10 ]; then
   echo "value is equal to 10!!"
@@ -50,7 +50,7 @@ fi
 ```sh
 #!/bin/bash
 
-read -p "enter the value a:" a
+read -p "enter the value a:" a # Using -p for User Input (One Variable at a Time). -p will take the input from the user.
 read -p "enter the value b:" b
 if [ $a -gt $b ]; then
   echo "value a greater then b"
@@ -62,7 +62,7 @@ fi
 **3.if-elif-else Statement**
 ```sh
 #!/bin/bash
-read -p "enter the marks of the student:" marks
+read -p "enter the marks of the student:" marks # Using -p for User Input (One Variable at a Time). -p will take the input from the user.
 if [ $marks -ge 90 ]; then
     echo "Grade: A"
 elif [ $marks -ge 75 ]; then
