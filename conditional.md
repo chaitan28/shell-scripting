@@ -142,3 +142,18 @@ read -p "enter your age:" age
 read -p "enter your country:" country
 [ $age -ge 18 ] &&  [ $country == india ] || echo "you can vote"
 ```
+
+### Error handling
+- Exit codes are used to indicate the status of the script’s execution. In Bash, exit codes range from 0 to 255:
+```sh
+0: Indicates success.
+1-255: Indicates an error or specific conditions.
+```
+```sh
+#!/bin/bash
+mkdir -p /tmp/new/one
+if [ $? -ne 0 ]; then
+  exit 1
+fi
+# if  mkdir fails, exit 1 is triggered.
+```
