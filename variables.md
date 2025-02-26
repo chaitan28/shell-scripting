@@ -3,7 +3,7 @@ variables are used to store data that can be used and manipulated throughout the
 - Variables are defined using the = operator, with no spaces around it.
 - Variable names can contain letters, numbers, and underscores, but they cannot start with a number.
 ```sh
-name="John"
+name="John" # (variable = string)
 age=25
 ```
 ### 2. Accessing Variables
@@ -39,20 +39,20 @@ Special variables in shell scripting are predefined variables that provide infor
 cat special_var.sh 
 ```sh
 #!/bin/bash
-echo "Script Name: $0"
-echo "First Argument: $1"
-echo "All Arguments: $@"
-echo "Total No of Arguments: $#"
-echo "Current PID: $$"
-echo "Exit status: $?"
+echo "Script Name            : $0"
+echo "First Argument         : $1"
+echo "Print all Arguments    : $@"
+echo "Total No of Arguments  : $#"
+echo "Current PID            : $$"
+echo "Exit status            : $?"
 ```
 
 ubuntu@ip-172-31-16-226:~/shell$ ./special_var.sh "my name is chaitanya welcome"
 ```sh
-Script Name: ./special_var.sh
-First Argument: my
-All Arguments: my name is chaitanya welcome
-Total No of Arguments: 5
-Current PID: 25285
-Exit status: 0
+$0 Script Name: ./special_var.sh                        
+$1 First Argument: my                                    
+$@ Print all Arguments: my name is chaitanya welcome     
+$# Total No of Arguments: 5                              
+$$ Current PID: 25285
+$? Exit status: 0
 ```

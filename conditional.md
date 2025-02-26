@@ -27,11 +27,12 @@
 ```
 **7.others for strings**
 ```sh
-File exists	            [ -e file ]
-File is a directory	    [ -d dir ]
-File is a regular file	[ -f file ]
-String is empty        	[ -z "$str" ]
-String is not empty   	[ -n "$str" ]
+file_name exists	       [ -f file_name ] or [ -e file_name] 
+file_name exists         [ ! -f file_name ]
+Directory exists	       [ -d dir ]
+Directory not exists     [ ! -d dir ]
+String is empty        	 [ -z "$str" ]
+String is not empty   	 [ -n "$str" ]
 ```
   
 ### conditional statements
@@ -78,7 +79,7 @@ fi
 ```sh
 #!/bin/bash
 echo "Provide the valid option from three options"
-echo "Option A for printing all the files in the current directory"
+echo "Option A for printing all the file_name_name_names in the current directory"
 echo "Option B for Checking the current path "
 echo "Option C for print date"
 read choice
