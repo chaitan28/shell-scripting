@@ -12,7 +12,8 @@ save and exit :wq!
 ```
 nano editor
 ```sh
-press CTRL + O and hit ENTER to save the changes
+press CTRL + O 
+Hit   ENTER to save the changes
 press CTRL + x to exit from the file terminal
 ```
 #### Example
