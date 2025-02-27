@@ -68,3 +68,32 @@ total 12
 ubuntu@ip-172-31-16-226:~/shell/scripts$ ls -lrt > /dev/null
 ubuntu@ip-172-31-16-226:~/shell/scripts$ 
 ```
+
+### 8. > and >>
+**single redirection(>)**
+- Redirects output to a file.
+- Overwrites the file if it already exists.
+- If the file doesn’t exist, it creates a new one.
+
+```sh
+echo "hello world" > new.txt
+output:
+hello world
+echo "this is ramu" > new.txt
+output:
+this is ramu
+```
+**single redirection(>>)**
+- Redirects output to a file.
+- Appends to the file instead of overwriting it.
+- If the file doesn’t exist, it creates a new one.
+
+```sh
+echo "hello world" >> new.txt
+output:
+hello world
+echo "this is ramu" >> new.txt
+output:
+hello world
+this is ramu
+```
