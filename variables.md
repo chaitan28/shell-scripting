@@ -20,7 +20,7 @@ name=john
 greeting="Hello, $name"
 echo "$greeting"  # Output: Hello, John
 ```
-4. Assigning Command Output to a Variable
+### 4. Assigning Command Output to a Variable
 - Use backticks $() to capture the output of a command and store it in a variable.
 ```sh
 current_date=$(date)
@@ -55,4 +55,16 @@ $@ Print all Arguments: my name is chaitanya welcome
 $# Total No of Arguments: 5                              
 $$ Current PID: 25285
 $? Exit status: 0
+```
+### 7. /dev/null 
+-  It is commonly used in shell scripting to suppress command output or errors.
+- output of the command is nullified.
+```sh
+ubuntu@ip-172-31-16-226:~/shell/scripts$ ls -lrt
+total 12
+-rw-rw-r-- 1 ubuntu ubuntu 223 Feb 26 09:29 s3-upload.sh
+-rw-rw-r-- 1 ubuntu ubuntu 209 Feb 26 10:13 file-creat.sh
+-rw-rw-r-- 1 ubuntu ubuntu 155 Feb 27 13:42 check-site.sh
+ubuntu@ip-172-31-16-226:~/shell/scripts$ ls -lrt > /dev/null
+ubuntu@ip-172-31-16-226:~/shell/scripts$ 
 ```
