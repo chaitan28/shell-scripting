@@ -22,7 +22,8 @@ crontab -l   # List current cron jobs
 ```sh
 Minute | Hour | Day | Month |  Day of week 
 Example:
- */10 * * * * /path/to/task.sh  # Run a script every 10 minutes
+ */10 * * * * /path/to/task.sh        # Run a script every 10 minutes.  * every hour 
+ grep CRON /var/log/syslog            # check the logs 
 ```
 - Minute                  (0 - 59)	
 - Hour                    (0 - 23)	
