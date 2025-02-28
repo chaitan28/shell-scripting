@@ -1,4 +1,4 @@
-### 1. Debugging
+### 1. Debugging (set)
 - set -x: Enables debugging, printing each command before execution.
 - set +x: Disables debugging.
 ```sh
