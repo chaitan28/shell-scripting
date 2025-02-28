@@ -30,3 +30,7 @@ Example:
 - Day of the month        (1 - 31)	
 - Month                   (1 - 12)
 - Day of the week         (0 - 6)  0=sunday, 6=saturaday
+
+
+### 3. AWK Command
+
