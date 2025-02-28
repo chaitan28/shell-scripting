@@ -22,3 +22,8 @@ crontab -l   # List current cron jobs
 ```sh
 Minute | Hour | Day | Month |  Day of week 
 ```
+- Minute                  (0 - 59)	
+- Hour                    (0 - 23)	
+- Day of the month        (1 - 31)	
+- Month                   (1 - 12)
+- Day of the week         (0 - 6)  0=sunday, 6=saturaday
