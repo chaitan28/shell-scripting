@@ -40,3 +40,19 @@ awk '{print $1, $3}' filename  # Print the 1st and 3rd columns of csv file(,sepe
 awk -F, '{print $4, $5}' table.csv 
 awk -F, '{if($1>105) print $1}' table.csv
 ```
+
+### 4. CUT Command
+- The cut command in Linux/Unix is a powerful utility used to extract specific sections (columns or fields) from each line of a file or input text.
+```sh
+cut -d, -f 1,3 table.csv  #-d: delimiter(type comma,) deprints 1 and 3 column
+cut -c1 table.csv         #print the 
+```
+### 5. grep Command
+- grep is used to search for patterns in files or input text. It prints lines that match a given pattern.
+```sh
+grep -i "pattern" filename # -i will ignore the upper case/lower case.
+egrep "kara|merry|green" user.csv file.txt # searching multiple names in multiple files.
+```
+
+### 6. SED Command
+- 
