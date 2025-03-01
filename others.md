@@ -34,3 +34,9 @@ Example:
 
 ### 3. AWK Command
 
+- awk is a versatile programming language for pattern scanning and processing. It is particularly useful for working with structured text
+```sh
+awk '{print $1, $3}' filename  # Print the 1st and 3rd columns of csv file(,seperated file)
+awk -F, '{print $4, $5}' table.csv 
+awk -F, '{if($1>105) print $1}' table.csv
+```
