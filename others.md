@@ -55,4 +55,11 @@ egrep "kara|merry|green" user.csv file.txt # searching multiple names in multipl
 ```
 
 ### 6. SED Command
-- 
+- sed (Stream Editor) is used for text substitution, deletion, insertion, and other text manipulations.
+```sh
+sed -i  's/old/new/g' filename
+sed -i 's/chaitanya/Chaitanya/' file.txt
+# It searches for the first occurrence of chaitanya on each line in file.txt and replaces it with Chaitanya
+sed -i 's/chaitanya/raghu/g' file.txt 
+# The above command replaces all chaitanya with raghu in all the lines in file.txt
+```
